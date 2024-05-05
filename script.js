@@ -24,7 +24,7 @@ function addAnimation() {
 }
 
 // Listen for scroll events on the window
-window.addEventListener("scroll", addAnimation);
+// window.addEventListener("scroll", addAnimation);
 window.onload = function () {
   let header = document.getElementById("header");
   header.classList.add("header-animation");

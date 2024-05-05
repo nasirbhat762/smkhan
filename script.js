@@ -32,4 +32,7 @@ window.onload = function () {
   let mains = document.getElementsByTagName("main");
   let main = mains[0];
   main.classList.add("main-animation");
+  let footers = document.getElementsByTagName("footer");
+  let footer = footers[0]; // Assuming there's only one footer element
+  footer.classList.add("footer-animation");
 };

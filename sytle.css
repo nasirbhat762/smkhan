@@ -136,6 +136,9 @@ footer>div{
 header{
   opacity: 0;
   transition: 3s;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 .header-animation{
   opacity: 1;

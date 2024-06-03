@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 header>nav>div>a>img{
     width: 80px;
   

@@ -6,10 +6,7 @@
 html{
   scroll-behavior: smooth;
 }
-header>nav>div>a>img{
-    width: 80px;
-  
-}
+
 .whatsapp{
   position: fixed;
   top: 85%;
@@ -116,24 +113,6 @@ main>.card>.card-container{
     /* border: 10px solid green; */
   }
 
-footer{
-    height: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    opacity: 0;
-    transition: 3s;
-}
-footer>div>ul{
-  list-style-type:none;
-}
-
-
-footer>div{
-    width: 300px;
-    height: fit-content;
-}
-
 /* animations  */
 header{
   opacity: 0;
@@ -159,10 +138,7 @@ main{
 
 
 @media screen and (max-width: 480px  ) {
-    header>nav>div>a>img{
-        width: 40px;
-      
-    }
+   
 
     main>div>div>img{
         width: 250px;
@@ -176,12 +152,7 @@ main{
     }
    
 
-    footer{
-      display: flex;
-      flex-direction: column;
-      height: fit-content;
-      padding: 20px;
-    }
+   
 
     .whatsapp{
      

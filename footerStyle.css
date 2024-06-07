@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    opacity: 1;
+    transition: 3s;
+}
+footer>div>ul{
+  list-style-type:none;
+}
+
+
+footer>div{
+    width: 300px;
+    height: fit-content;
+}
+
+
+@media screen and (max-width: 480px  ) {
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        padding: 20px;
+      }
+}

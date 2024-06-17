@@ -12,6 +12,11 @@ html{
   top: 85%;
   left: 95%;
 }
+.linkedin{
+  position: fixed;
+  top: 75%;
+  left: 95%;
+}
 main{
     width: 80%;
     height: fit-content;
@@ -64,43 +69,9 @@ main>.card>.card-container{
 
 }
 
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
 
-  .flip-card-back {
-  
-    transform: rotateY(180deg);
-  }
+
+
 
   .clients-caro{
     height: fit-content;
@@ -112,6 +83,17 @@ main>.card>.card-container{
     width: 200px;
     /* border: 10px solid green; */
   }
+
+  /* increasing number transitions */
+  #project-counter0 {
+    transition: all 0.5s ease-in-out;
+}
+#project-counter1 {
+  transition: all 0.5s ease-in-out;
+}
+#project-counter2 {
+  transition: all 0.5s ease-in-out;
+}
 
 /* animations  */
 header{
@@ -137,10 +119,11 @@ main{
 }
 
 
+/* media queries  */
 @media screen and (max-width: 480px  ) {
    
 
-    main>div>div>img{
+    main>div>img{
         width: 250px;
         margin: 5px 0px;
     }
@@ -157,6 +140,11 @@ main{
     .whatsapp{
      
       top: 85%;
+      left: 90%;
+      z-index: 1;
+    }
+    .linkedin{
+      top: 75%;
       left: 90%;
       z-index: 1;
     }

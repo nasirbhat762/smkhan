@@ -87,7 +87,7 @@ for (let dataitem of data) {
     `<div class="card rounded-0 border-success" style="width: 18rem;">
   <img src=${dataitem.image} class="card-img-top rounded-0" alt="...">
   <div class="card-body">
-    <h5 class="card-title">${dataitem.Service}</h5>
+    <h5 class="card-title fw-bold">${dataitem.Service}</h5>
     <p class="card-text">${dataitem.Description}</p>
    
   </div>

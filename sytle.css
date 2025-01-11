@@ -1,92 +1,97 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
-.whatsapp{
+.whatsapp {
   position: fixed;
   top: 85%;
   left: 95%;
 }
-.linkedin{
+.linkedin {
   position: fixed;
   top: 75%;
   left: 95%;
 }
-main{
-    width: 80%;
-    height: fit-content;
-    margin: 0px auto;
-    /* border: 1px solid green; */
+main {
+  width: 80%;
+  height: fit-content;
+  margin: 0px auto;
+  /* border: 1px solid green; */
 }
 
-
-main>.card>.card-container{
-    /* background-color: green; */
-    height: 300px;
-    width: 50%;
-
+.neet {
+  background-color: green !important;
+  animation: neetanim 1s linear 0s infinite alternate;
 }
 
-.projects{
+@keyframes neetanim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+main > .card > .card-container {
+  /* background-color: green; */
+  height: 300px;
+  width: 50%;
+}
+
+.projects {
   height: 400px;
   border: 1px solid grey;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
-  background-color: rgb(25,135,84);
+  background-color: rgb(25, 135, 84);
   color: white;
   margin: 20px auto;
   padding: 10px;
   display: flex;
   gap: 10px;
-
 }
-.projects>div{
+.projects > div {
   width: 50%;
 }
-.projects>.left>div{
+.projects > .left > div {
   display: flex;
   flex-wrap: wrap;
-
 }
 
-.projects>.right{
+.projects > .right {
   /* padding: 10px; */
   /* border: 1px solid green; */
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
-.projects>.right>div{
+.projects > .right > div {
   width: 150px;
   height: 150px;
   border: 1px solid white;
   border-radius: 15px;
-
 }
 
+.clients-caro {
+  height: fit-content;
+  /* border: 5px solid red; */
+}
 
+.clients-caro > div > div > div > div > img {
+  height: 200px;
+  width: 200px;
+  /* border: 10px solid green; */
+}
 
-
-
-  .clients-caro{
-    height: fit-content;
-    /* border: 5px solid red; */
-  }
-
-  .clients-caro>div>div>div>div>img{
-    height: 200px;
-    width: 200px;
-    /* border: 10px solid green; */
-  }
-
-  /* increasing number transitions */
-  #project-counter0 {
-    transition: all 0.5s ease-in-out;
+/* increasing number transitions */
+#project-counter0 {
+  transition: all 0.5s ease-in-out;
 }
 #project-counter1 {
   transition: all 0.5s ease-in-out;
@@ -96,92 +101,80 @@ main>.card>.card-container{
 }
 
 /* animations  */
-header{
+header {
   opacity: 0;
   transition: 3s;
   position: sticky;
   top: 0;
   z-index: 2;
 }
-.header-animation{
+.header-animation {
   opacity: 1;
 }
 
-main{
+main {
   opacity: 0;
   transition: 3s;
 }
-.main-animation{
+.main-animation {
   opacity: 1;
 }
-.footer-animation{
+.footer-animation {
   opacity: 1;
 }
-
 
 /* media queries  */
-@media screen and (max-width: 480px  ) {
-   
-
-    main>div>img{
-        width: 250px;
-        margin: 5px 0px;
-    }
-
-    .clients-caro>div>div>div>div>img{
-      height: 50px;
-      width: 50px;
-      /* border: 10px solid green; */
-    }
-   
-
-   
-
-    .whatsapp{
-     
-      top: 85%;
-      left: 90%;
-      z-index: 1;
-    }
-    .linkedin{
-      top: 75%;
-      left: 90%;
-      z-index: 1;
-    }
-   
+@media screen and (max-width: 480px) {
+  main > div > img {
+    width: 250px;
+    margin: 5px 0px;
   }
 
-  @media screen and (max-width: 890px  ){
-    .projects{
-      height: 1000px;
-      border: 1px solid grey;
-      border-top-right-radius: 30px;
-      border-bottom-left-radius: 30px;
-      background-color: rgb(25,135,84);
-      color: white;
-      margin: 20px auto;
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    
-    }
-  }
-  @media screen and (max-width: 620px  ){
-    .projects{
-      height: 1420px;
-      border: 1px solid grey;
-      border-top-right-radius: 30px;
-      border-bottom-left-radius: 30px;
-      background-color: rgb(25,135,84);
-      color: white;
-      margin: 20px auto;
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    
-    }
+  .clients-caro > div > div > div > div > img {
+    height: 50px;
+    width: 50px;
+    /* border: 10px solid green; */
   }
 
-  
+  .whatsapp {
+    top: 85%;
+    left: 90%;
+    z-index: 1;
+  }
+  .linkedin {
+    top: 75%;
+    left: 90%;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .projects {
+    height: 1000px;
+    border: 1px solid grey;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: rgb(25, 135, 84);
+    color: white;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .projects {
+    height: 1420px;
+    border: 1px solid grey;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: rgb(25, 135, 84);
+    color: white;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

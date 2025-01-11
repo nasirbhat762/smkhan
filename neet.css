@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main > marquee {
+  font-size: 2.5rem;
+  background-color: #ffc111;
+  color: black;
+  padding: 10px 5px;
+  margin: 0px !important;
+}
+
+main > div {
+  min-height: 72vh;
+  margin: 0px !important;
+}

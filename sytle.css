@@ -7,12 +7,12 @@ html {
   scroll-behavior: smooth;
 }
 
-.whatsapp {
+#whatsapp {
   position: fixed;
   top: 85%;
   left: 95%;
 }
-.linkedin {
+#linkedin {
   position: fixed;
   top: 75%;
   left: 95%;

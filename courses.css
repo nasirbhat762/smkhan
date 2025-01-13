@@ -53,6 +53,27 @@ fieldset {
   box-shadow: 5px 5px 3px lightgray !important;
 }
 
+.carousel-control-prev-icon {
+  background-image: none; /* Remove the default SVG icon */
+  border: solid 2px yellow; /* Create a custom arrow icon */
+  border-width: 2px 2px 0 0; /* Adjust arrow shape */
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  transform: rotate(-135deg);
+  position: relative;
+}
+.carousel-control-next-icon {
+  background-image: none; /* Remove the default SVG icon */
+  border: solid yellow; /* Create a custom arrow icon */
+  border-width: 2px 2px 0 0;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  transform: rotate(45deg);
+  position: relative;
+}
+
 @media only screen and (max-width: 450px) {
   .success-stories-container {
     /* border: 5px solid red; */

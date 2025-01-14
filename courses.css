@@ -3,12 +3,33 @@
   padding: 0;
   box-sizing: border-box;
 }
-main > marquee {
-  font-size: 2.5rem;
-  background-color: #ffc111;
-  color: black;
-  padding: 10px 5px;
-  margin: 0px !important;
+.main-box {
+  height: 100vh;
+  /* border: 2px solid red; */
+  display: flex;
+}
+.main-box .left {
+  width: 60vw;
+}
+.main-box aside {
+  width: 40vw;
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+}
+.main-box .courses-carousel-container {
+  height: 60vh;
+}
+.custom-course-image {
+  width: 60vw;
+  height: 60vh;
+}
+.main-box .videos-carousel-container {
+  height: 40vh;
+  /* border: 1px solid blue; */
+}
+.youtube-video {
+  height: 40vh;
+  width: 60vw;
 }
 
 fieldset {
@@ -16,6 +37,9 @@ fieldset {
   padding: 10px;
   border-radius: 7px;
   box-shadow: 3px 3px 3px lightgray;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .success-stories-container {
   /* border: 5px solid red; */
@@ -73,15 +97,51 @@ fieldset {
   transform: rotate(45deg);
   position: relative;
 }
-
-@media only screen and (max-width: 450px) {
+/* media query for success stories  */
+@media only screen and (max-width: 425px) {
   .success-stories-container {
     /* border: 5px solid red; */
-    width: 100vw;
+    width: 95vw;
     min-height: 100vh !important;
     height: fit-content;
     margin: 10px auto;
     box-shadow: 5px 5px 3px lightgray !important;
     border-radius: 5px;
+  }
+}
+
+/* media query for  main-box  */
+@media only screen and (max-width: 425px) {
+  .main-box {
+    height: 150vh;
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+  }
+  .main-box .left {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: lightcoral; */
+  }
+  .main-box aside {
+    width: 100vw;
+    height: 50vh;
+    background-color: green;
+  }
+  .main-box .courses-carousel-container {
+    height: 50vh;
+
+    /* border: 1px solid red; */
+  }
+  .main-box .videos-carousel-container {
+    height: 50vh;
+    /* border: 1px solid blue; */
+  }
+  .youtube-video {
+    height: 50vh;
+    width: 100vw;
+  }
+  .custom-course-image {
+    width: 100vw;
+    height: 50vh;
   }
 }

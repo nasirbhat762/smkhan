@@ -197,7 +197,7 @@ function displayCourses() {
 
   courses.forEach((course) => {
     content += `
-     <fieldset class="card custom-width">
+     <fieldset class="card custom-width d-flex">
           <legend class="text-center">${course.program}</legend>
           <img src="" alt="">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet distinctio, voluptas, asperiores odit eligendi cum aspernatur quis reprehenderit animi quasi, optio eius? Illum, dolorem. Ex magnam quis minima officia necessitatibus animi aliquam adipisci enim iure voluptate natus incidunt, quos temporibus quo, eaque accusantium, reiciendis voluptas dolor nulla maxime? Ipsam, quasi?</p>

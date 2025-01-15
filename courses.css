@@ -4,31 +4,53 @@
   box-sizing: border-box;
 }
 .main-box {
-  height: 100vh;
+  height: 110vh;
   /* border: 2px solid red; */
   display: flex;
+  gap: 5px;
 }
 .main-box .left {
   width: 60vw;
 }
 .main-box aside {
   width: 40vw;
-  background-color: #d9afd9;
-  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  /* border: 2px solid red; */
+  overflow-y: scroll;
+  padding: 5px 0 0 0;
+}
+aside > .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+aside > .cards > .custom-card {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  justify-content: center;
+  border: 1px solid lightgray;
+}
+aside > .cards > .custom-card > img {
+  width: 100px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
 }
 .main-box .courses-carousel-container {
   height: 60vh;
+  display: flex;
+  align-items: center;
+  align-items: center;
 }
 .custom-course-image {
   width: 60vw;
-  height: 60vh;
+  height: 55vh;
 }
 .main-box .videos-carousel-container {
-  height: 40vh;
+  height: 50vh;
   /* border: 1px solid blue; */
 }
 .youtube-video {
-  height: 40vh;
+  height: 50vh;
   width: 60vw;
 }
 
@@ -49,23 +71,6 @@ fieldset {
   margin: 10px auto;
   box-shadow: 5px 5px 3px lightgray !important;
   border-radius: 5px;
-}
-.custom-width {
-  width: 320px;
-}
-
-.custom-image {
-  width: 300px;
-  height: 300px;
-  aspect-ratio: 2/3;
-  border-radius: 50%;
-  margin: 0px auto;
-  border: 5px solid lightgray;
-  overflow: hidden;
-}
-.custom-image > img:hover {
-  transform: scale(1.1);
-  transition: 0.8s;
 }
 
 .success-card {
@@ -125,7 +130,6 @@ fieldset {
   .main-box aside {
     width: 100vw;
     height: 50vh;
-    background-color: green;
   }
   .main-box .courses-carousel-container {
     height: 50vh;
@@ -142,6 +146,6 @@ fieldset {
   }
   .custom-course-image {
     width: 100vw;
-    height: 50vh;
+    height: 40vh;
   }
 }

@@ -94,7 +94,7 @@ const faculties = [
   {
     subject: "Maths",
     name: "Arti Saxena",
-    image: "pics/facultyPics/shruti.jpeg",
+    image: "pics/facultyPics/arti.jpeg",
     qualifications: ["M.Sc. Mathematics"],
     experience: "15+ years",
     specialization: "Teaching NEET and JEE aspirants",
@@ -232,19 +232,25 @@ function displayFaculty() {
       qualification += qual + "<br>";
     }
     str += `
-      
-        <div class="card border-0 custom-shadow custom-width">
-          <div  class="custom-image"> 
-           <img src="${faculty.image}" class="card-img-top" alt="image here"> 
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">${faculty.name}</h3>
-            <h4 class="card-title">${faculty.subject}</h4>
-            <p class="card-text">${faculty.experience}</p>
-            <p class="card-text">${qualification}</p>
-            <p class="card-text">${faculty.specialization}</p>
-          </div>
-        </div>
+      <div class="card border-0 shadow-lg" style="width: 350px;">
+  <div class="position-relative">
+    <img src="${faculty.image}" class="card-img-top rounded-top" alt="Faculty Image">
+    <div class="position-absolute top-0 end-0 bg-primary text-white px-3 py-1 rounded-start">
+      <small>${faculty.experience} years of experience</small>
+    </div>
+  </div>
+  <div class="card-body text-center">
+    <h5 class="card-title text-dark fw-bold mb-1">${faculty.name}</h5>
+    <p class="text-secondary mb-2">${faculty.subject}</p>
+    <hr class="my-2">
+    <p class="card-text text-muted mb-2"><strong>Qualification:</strong> ${qualification}</p>
+    <p class="card-text text-muted"><strong>Specialization:</strong> ${faculty.specialization}</p>
+  </div>
+  <div class="card-footer bg-light text-center">
+    <button class="btn btn-primary btn-sm px-4">Know More</button>
+  </div>
+</div>
+
       `;
   }
   document.getElementById("facultyCardsContainer").innerHTML = str;

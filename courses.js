@@ -110,7 +110,7 @@ const faculties = [
   {
     subject: "Foundation Batch",
     name: "Nidhi",
-    image: "pics/facultyPics/shruti.jpeg",
+    image: "pics/facultyPics/nidhi.jpeg",
     qualifications: [
       "B.Sc. Natural Science",
       "BElEd",
@@ -197,7 +197,7 @@ function displayCourses() {
 
   courses.forEach((course) => {
     content += `
-     <fieldset class="card custom-width d-flex">
+     <fieldset class="card custom-width d-flex card-animation">
           <legend class="text-center">${course.program}</legend>
           <img src="" alt="">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet distinctio, voluptas, asperiores odit eligendi cum aspernatur quis reprehenderit animi quasi, optio eius? Illum, dolorem. Ex magnam quis minima officia necessitatibus animi aliquam adipisci enim iure voluptate natus incidunt, quos temporibus quo, eaque accusantium, reiciendis voluptas dolor nulla maxime? Ipsam, quasi?</p>
@@ -232,10 +232,10 @@ function displayFaculty() {
       qualification += qual + "<br>";
     }
     str += `
-      <div class="card border-0 shadow-lg" style="width: 350px;">
+      <div class="card border-0 shadow-lg card-animation" style="width: 350px;">
   <div class="position-relative">
     <img src="${faculty.image}" class="card-img-top rounded-top" alt="Faculty Image">
-    <div class="position-absolute top-0 end-0 bg-primary text-white px-3 py-1 rounded-start">
+    <div class="position-absolute top-0 end-0  text-white px-3 py-1 rounded-start" style="background-color: #0e374b;">
       <small>${faculty.experience} years of experience</small>
     </div>
   </div>
@@ -247,7 +247,7 @@ function displayFaculty() {
     <p class="card-text text-muted"><strong>Specialization:</strong> ${faculty.specialization}</p>
   </div>
   <div class="card-footer bg-light text-center">
-    <button class="btn btn-primary btn-sm px-4">Know More</button>
+    <button class="btn text-white btn-sm px-4" style="background-color: #0e374b;">Know More</button>
   </div>
 </div>
 

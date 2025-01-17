@@ -205,75 +205,36 @@ const successStories = [
 
 const cardsData = [
   {
-    image: "./pics/elearning/Vedantulogo_orange.png", // Vedantu logo
-    heading: "Vedantu",
+    image: '<i class="bi bi-eye fs-1"></i>', // eye logo
+    heading: "Vision",
     paragraph:
-      "Leading online tutoring platform offering personalized live teaching solutions.",
+      "Inspire and equip learners globally to achieve excellence and their aspirations.",
   },
   {
-    image: "pics/elearning/straive.png", // Straive logo
-    heading: "Straive",
+    image: '<i class="bi bi-bullseye fs-1"></i>', // target logo
+    heading: "Mission",
     paragraph:
-      "Provides content and data solutions for businesses and learning platforms.",
+      "Deliver accessible and affordable education with innovative tools and strategies.",
   },
   {
-    image: "pics/elearning/toppr.png", // Toppr logo
-    heading: "Toppr",
+    image: '<i class="bi bi-arrow-up-right-circle fs-1"></i>', // arrow up logo
+    heading: "Key Differentiator",
     paragraph:
-      "Empowers students with tools for adaptive and personalized online learning.",
+      "Unique features like AI-driven personalized learning, affordable pricing, and a focus on competitive success.",
   },
+
   {
-    image: "pics/elearning/bartleby.jpg", // Bartleby logo
-    heading: "Bartleby",
-    paragraph: "A student success hub with expert Q&A and learning tools.",
-  },
-  {
-    image: "pics/elearning/chegg.jpg", // Chegg logo
-    heading: "Chegg",
+    image: '<i class="bi bi-award fs-1"></i>', // Competitive logo
+    heading: "Competitive Edge",
     paragraph:
-      "Offers academic help, textbook rentals, and expert question-solving services.",
+      "Our Competitive Edge is our success rate in enabling students to crack top-tier exams.",
   },
+
   {
-    image: "pics/elearning/hurix.png", // Hurix Digital logo
-    heading: "Hurix Digital",
+    image: '<i class="bi bi-sign-intersection-t fs-1"></i>', // t logo
+    heading: "Signature Offering",
     paragraph:
-      "Creates digital content and solutions for enterprise learning and education.",
-  },
-  {
-    image: "pics/elearning/pw.png", // PhysicsWallah logo
-    heading: "PhysicsWallah",
-    paragraph:
-      "Affordable education platform specializing in physics and competitive exam preparation.",
-  },
-  {
-    image: "pics/elearning/numerade_logo_Logo.jpg", // Numerade logo
-    heading: "Numerade",
-    paragraph:
-      "Provides step-by-step video solutions for STEM-focused academic questions.",
-  },
-  {
-    image: "pics/elearning/unacademy.avif", // Unacademy logo
-    heading: "Unacademy",
-    paragraph:
-      "India's largest learning platform offering live classes by experts.",
-  },
-  {
-    image: "pics/elearning/simplilearn.jpg", // Simplilearn logo
-    heading: "Simplilearn",
-    paragraph:
-      "Skill-building platform offering professional certification and online bootcamps.",
-  },
-  {
-    image: "pics/elearning/magnon.png", // Magnon logo
-    heading: "Magnon",
-    paragraph:
-      "Creative agency specializing in digital transformation and marketing solutions.",
-  },
-  {
-    image: "pics/elearning/academian.jpg", // Academian logo
-    heading: "Academian",
-    paragraph:
-      "Innovative platform focused on personalized and interactive learning experiences.",
+      "Our Signature Offering is personalized coaching for competitive exams.",
   },
 ];
 
@@ -284,7 +245,7 @@ function displayCourses() {
   courses.forEach((course) => {
     content += `
      <fieldset class="card custom-width d-flex card-animation">
-          <legend class="text-center">${course.program}</legend>
+          <legend class="text-center fw-bold">${course.program}</legend>
           <img src="" alt="">
           <p>${course.paragraph}</p>
           <p><strong>Fee:${course.fee}</strong></p>
@@ -422,25 +383,21 @@ function displaySuccessStories() {
 displaySuccessStories();
 
 function displayCards(cards) {
-  // Initialize an empty string to store the card HTML
   let cardsHTML = "";
 
-  // Iterate through the cards array to construct the HTML
   cards.forEach((card) => {
     cardsHTML += `
-      <div class="custom-card">
-        <img src="${card.image}" alt="${card.heading}">
+      <div class="custom-card text-custom">
+        ${card.image}
         <div class="custom-card-text">
           <h3>${card.heading}</h3>
-          <p>${card.paragraph}</p>
+          <p class="text-dark">${card.paragraph}</p>
         </div>
       </div>
     `;
   });
 
-  // Get the container element and set its innerHTML
   document.getElementById("cards-container1").innerHTML = cardsHTML;
 }
 
-// Call the function with the cardsData array
 displayCards(cardsData);

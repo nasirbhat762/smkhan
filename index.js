@@ -61,12 +61,12 @@ const faculties = [
       "Ph.D. Immunology",
     ],
     experience: "10+ years",
-    specialization: "Teaching Zoology to NEET aspirants",
+    specialization: "Guiding NEET aspirants in Zoology",
   },
   {
     subject: "Botany",
     name: "Dr. Mayur Patil",
-    image: "pics/facultyPics/dummyboy.jpg",
+    image: null,
     qualifications: [
       "M.Sc. Angiosperms Taxonomy",
       "Ph.D. Biochemistry",
@@ -79,7 +79,7 @@ const faculties = [
       "MA (Counselling Psychology)",
     ],
     experience: "10+ years",
-    specialization: "Teaching NEET aspirants",
+    specialization: "Empowering students with expertise in Botany",
   },
   {
     subject: "Physics",
@@ -93,15 +93,15 @@ const faculties = [
       "MES-MPSC",
     ],
     experience: "10+ years",
-    specialization: "Teaching NEET aspirants",
+    specialization: "Simplifying Physics for NEET aspirants",
   },
   {
     subject: "Chemistry",
     name: "Shivani Mishra",
-    image: "pics/facultyPics/dummygirl.jpg",
+    image: null,
     qualifications: ["M.Sc. Chemistry", "M.Tech Chemistry"],
     experience: "10+ years",
-    specialization: "Teaching Chemistry",
+    specialization: "Making Chemistry accessible and enjoyable",
   },
   {
     subject: "Maths",
@@ -109,15 +109,15 @@ const faculties = [
     image: "pics/facultyPics/arti.jpg",
     qualifications: ["M.Sc. Mathematics"],
     experience: "15+ years",
-    specialization: "Teaching NEET and JEE aspirants",
+    specialization: "Enhancing problem-solving skills for NEET and JEE",
   },
   {
     subject: "Foundation Batch",
     name: "Geetanjali",
-    image: "pics/facultyPics/dummygirl.jpg",
+    image: null,
     qualifications: ["M.Sc. Mathematics", "B.Ed."],
     experience: "5+ years",
-    specialization: "Teaching NEET foundation batch",
+    specialization: "Laying a strong foundation for future success",
   },
   {
     subject: "Foundation Batch",
@@ -130,7 +130,7 @@ const faculties = [
       "M.Ed. in Science",
     ],
     experience: "7+ years",
-    specialization: "Teaching NEET foundation students",
+    specialization: "Nurturing young minds in the NEET foundation batch",
   },
 ];
 
@@ -278,7 +278,8 @@ function displayFaculty() {
     for (let qual of faculty.qualifications) {
       qualification += qual + "<br>";
     }
-    str += `
+    if (faculty.image) {
+      str += `
       <div class="card border-0 shadow-lg card-animation" style="width: 350px;">
   <div class="position-relative">
     <img src="${faculty.image}" class="card-img-top rounded-top" alt="Faculty Image">
@@ -297,7 +298,9 @@ function displayFaculty() {
 </div>
 
       `;
+    }
   }
+
   document.getElementById("facultyCardsContainer").innerHTML = str;
 }
 

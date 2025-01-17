@@ -130,22 +130,23 @@ fieldset {
 }
 .home {
   opacity: 0;
+  animation: text-y-animation 0.5s ease-out 0.5s normal forwards;
 }
 .courses {
   opacity: 0;
-  animation: text-y-animation 1s ease-out 1s normal forwards;
+  animation: text-y-animation 0.6s ease-out 0.6s normal forwards;
 }
 .testseries {
   opacity: 0;
-  animation: text-y-animation 1.5s ease-out 1s normal forwards;
+  animation: text-y-animation 0.7s ease-out 0.7s normal forwards;
 }
 .aboutus {
   opacity: 0;
-  animation: text-y-animation 2s ease-out 1s normal forwards;
+  animation: text-y-animation 0.8s ease-out 0.8s normal forwards;
 }
 .services {
   opacity: 0;
-  animation: text-y-animation 2.5s ease-out 1s normal forwards;
+  animation: text-y-animation 0.9s ease-out 0.9s normal forwards;
 }
 /* media query for success stories  */
 @media only screen and (max-width: 425px) {

@@ -66,11 +66,11 @@ const faculties = [
   {
     subject: "Botany",
     name: "Dr. Mayur Patil",
-    image: null,
+    image: "pics/facultyPics/mayur.jpg",
     qualifications: [
       "M.Sc. Angiosperms Taxonomy",
       "Ph.D. Biochemistry",
-      "CSIR-NET",
+      "CSIR-NET  (AIR-29)",
       "ICAR-NET",
       "MH-SET",
       "TIFR",

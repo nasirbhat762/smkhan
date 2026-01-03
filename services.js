@@ -1,4 +1,4 @@
-// services data
+// other services data
 let OtherServicesData = [
   {
     heading: "k12 services",
@@ -129,9 +129,38 @@ const aiServicesData = [
   },
 ];
 
+// branding and creative services data
+const brandingAndCreativeServices = [
+  {
+    heading: "Brand Strategy & Identity",
+    para: "Brand positioning, brand voice & messaging, and visual identity planning.",
+  },
+  {
+    heading: "Logo & Visual Branding",
+    para: "Logo design, color palette & typography, and complete brand guidelines.",
+  },
+  {
+    heading: "Social Media Branding",
+    para: "Profile branding for Instagram, LinkedIn & YouTube, post and story creatives.",
+  },
+  {
+    heading: "Marketing & Promotional Creatives",
+    para: "Posters, banners, ad creatives, and website or landing page visuals.",
+  },
+  {
+    heading: "Character Design & Illustrations",
+    para: "Mascot & character design, educational illustrations, and custom brand artwork.",
+  },
+  {
+    heading: "Rebranding Solutions",
+    para: "Brand refresh, redesign, and complete branding for startups & small businesses.",
+  },
+];
+
 // targetting html element services and aiServices
 let otherServies = document.getElementById("otherServices");
 let aiServices = document.getElementById("aiServices");
+let brandingServices = document.getElementById("brandingServices");
 
 // displaying  other services
 let allOtherServices = "";
@@ -173,3 +202,19 @@ for (let item of aiServicesData) {
 }
 
 aiServices.innerHTML = allAiServices;
+
+// dislaying branding and creative serivces
+let allBrandingServices = "";
+
+for (let item of brandingAndCreativeServices) {
+  allBrandingServices += `
+    <div class="card text-center rounded-0 border-success m-2" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">${item.heading}</h5>
+        <p class="card-text">${item.para}</p>
+      </div>
+    </div>
+  `;
+}
+
+brandingServices.innerHTML = allBrandingServices;

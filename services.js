@@ -36,25 +36,15 @@ const aiServicesData = [
   {
     id: 1,
     title: "AI Data Annotation & Labeling",
-    features: [
-      "Image, Video, Text & Audio Annotation",
-      "Bounding Boxes, Polygons & Segmentation",
-      "NLP Data Labeling",
-      "Medical & Educational Dataset Annotation",
-    ],
-    note: "Used for training Machine Learning & AI models.",
+    para: "We provide accurate and scalable data annotation services to help businesses train high-performing AI and machine learning models across multiple industries.",
+    link: "./aiservices/aidataannotationandlabelling.html",
   },
 
   {
     id: 2,
     title: "AI Training Data Creation",
-    features: [
-      "Question–Answer Dataset Creation",
-      "Prompt–Response Generation",
-      "Educational Datasets for AI Learning",
-      "Domain-specific Data (Medical, STEM, Exams)",
-    ],
-    note: "Perfect alignment with EdTech & AI needs.",
+    para: "Our team creates high-quality training datasets that improve AI learning, response quality, and performance for domain-specific applications.",
+    link: "./aiservices/aitrainingdatacreation.html",
   },
 
   {
@@ -66,69 +56,45 @@ const aiServicesData = [
       "Course Scripts & Learning Material",
       "Multilingual Content Creation",
     ],
-    note: "Ideal for MOOCs & EdTech platforms.",
+    para: "We deliver AI-assisted content solutions including assessments, study material, and multilingual educational resources for digital platforms.",
+    link: "./aiservices/aicontentgenerationservices.html",
   },
 
   {
     id: 4,
     title: "LLM Evaluation & AI Model Testing",
-    features: [
-      "AI Response Quality Evaluation",
-      "Bias & Accuracy Checking",
-      "Prompt Testing & Optimization",
-      "Human-in-the-loop Review",
-    ],
-    note: "High-demand service in Generative AI.",
+    para: "We help organizations improve AI model quality through structured evaluation, prompt testing, bias checks, and expert human review.",
+    link: "./aiservices/llmevaluationandaimodeltesting.html",
   },
 
   {
     id: 5,
     title: "AI Prompt Engineering Services",
-    features: [
-      "Prompt Design & Optimization",
-      "Domain-specific Prompt Libraries",
-      "Educational & Training Prompts",
-      "Chatbot Prompt Development",
-    ],
-    note: "Premium and future-ready AI service.",
+    para: "Our prompt engineering services create optimized prompts that improve chatbot accuracy, automation efficiency, and user engagement.",
+    link: "./aiservices/aipromptengineeringservices.html",
   },
 
   {
     id: 6,
     title: "AI-powered Exams & Assessments",
-    features: [
-      "AI-generated Question Papers",
-      "Adaptive Testing Systems",
-      "Automated Evaluation Support",
-      "Learning Analytics & Insights",
-    ],
-    note: "Strong USP for Smart EduTech.",
+    para: "We build intelligent assessment systems with AI-generated exams, adaptive testing, and analytics for modern learning environments.",
+    link: "./aiservices/aipoweredexamsandassessments.html",
   },
 
   {
     id: 7,
     title: "AI Content Moderation Services",
-    features: [
-      "Text, Image & Video Moderation",
-      "Educational Platform Moderation",
-      "Policy & Safety Compliance Checking",
-    ],
-    note: "Essential for AI platforms & learning apps.",
+    para: "We provide reliable moderation services to keep digital platforms safe, compliant, and user-friendly across text, image, and video content.",
+    link: "./aiservices/aicontentmoderationservices.html",
   },
 
   {
     id: 8,
     title: "AI Curriculum & Course Design",
-    features: [
-      "AI/ML Course Structure Design",
-      "Job-oriented AI Learning Paths",
-      "Certification Course Creation",
-      "Corporate & Institutional Training",
-    ],
-    note: "Perfect fit with Smart EduTech certification plans.",
+    para: "We design industry-focused AI learning programs, certification courses, and training paths for institutions and businesses.",
+    link: "./aiservices/aicurriculumandcoursedesign.html",
   },
 ];
-
 // branding and creative services data
 const brandingAndCreativeServices = [
   {
@@ -190,12 +156,8 @@ for (let item of aiServicesData) {
   min-height: 300px;">
   <div class="card-body d-flex flex-column">
     <h5 class="card-title">${item.title}</h5>
-
-    <ul class="list-unstyled card-text text-start small flex-grow-1">
-      ${item.features.map((feature) => `<li>• ${feature}</li>`).join("")}
-    </ul>
-
-    <p class="text-muted small mt-2">${item.note}</p>
+    <p class="card-text">${item.para}</p>
+    <a href="${item.link}" class="btn btn-outline-success rounded-0">Get more info</a>
   </div>
 </div>
   `;

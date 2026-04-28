@@ -10,18 +10,24 @@ html {
 #whatsapp {
   position: fixed;
   top: 85%;
-  left: 95%;
+  left: 92%;
 }
 #linkedin {
   position: fixed;
   top: 75%;
-  left: 95%;
+  left: 92%;
 }
 main {
   width: 80%;
   height: fit-content;
   margin: 0px auto;
   /* border: 1px solid green; */
+}
+
+.card-animation {
+  animation: simple-card-animation ease-out;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
 }
 
 .neet {
